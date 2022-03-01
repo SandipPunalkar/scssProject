@@ -1,3 +1,8 @@
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #222222;
@@ -10,6 +15,11 @@ h4 {
   font-family: Georgia, "Times New Roman", Times, serif;
 }
 
+h2 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
 p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -18,7 +28,15 @@ a {
   color: #f27731;
 }
 
+.warning-button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 12px;
+}
+
 #header {
+  border-radius: 6px;
+  border: 1px solid #333;
   height: 60px;
   background-color: #170a48;
 }
