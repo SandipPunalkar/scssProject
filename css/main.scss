@@ -7,6 +7,15 @@
 
 @include fancy-links;
 
+.error {
+  color: red;
+}
+.critical-error {
+  @extend .error;
+  bottom: 1px solid red;
+  font-weight: bold;
+}
+
 body {
   font-family: $text-font;
   color: $text-color;
@@ -46,7 +55,16 @@ a {
     font-size: 125%;
   }
 }
-
+.cta-button {
+  @extend .warning-button;
+  @extend .error;
+  @include rounded;
+  font-weight: bold;
+}
+.super-cta-button {
+  @extend .cta-button;
+  font-size: em(20px);
+}
 #header {
   @include box(8px, 1px solid #999);
   @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secandary-color);
@@ -83,11 +101,11 @@ a {
 
   #content {
     float: left;
-    width: 6 * $col;
+    //width: 6 * $col;
   }
   #sidebar {
     float: right;
-    width: 2 * $col;
+    /// width: 2 * $col;
     li {
       list-style-type: none;
       padding: em(16px) em(20px);
