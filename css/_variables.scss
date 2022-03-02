@@ -1,13 +1,33 @@
 @import "functions";
 
+//Theme - Dark,Light,Default
+$theme: Dark;
 //Colors
 $text-color: #222222;
+$body-background-color: #fff;
 $theme-color: #170a48;
 $secandary-color: #f27731;
 $ternary-color: #ccf962;
 $link-color: $secandary-color;
 $menuItem-color: white;
 
+@if $theme == Dark {
+  $text-color: #fff;
+  $body-background-color: #22222a;
+  $theme-color: #42424a;
+  $secandary-color: #c24721;
+  $ternary-color: #698932;
+  $link-color: $secandary-color;
+  $menuItem-color: white;
+} @else if $theme == Light {
+  $text-color: #000;
+  $body-background-color: #fff;
+  $theme-color: #372a27;
+  $secandary-color: #d26741;
+  $ternary-color: #b9da63;
+  $link-color: $secandary-color;
+  $menuItem-color: white;
+}
 //Fonts
 $text-font: Verdana, Geneva, Tahoma, sans-serif;
 $headline-font: Georgia, "Times New Roman", Times, serif;

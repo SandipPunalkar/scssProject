@@ -16,8 +16,9 @@ a {
 
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #222222;
   font-size: 1.125em;
+  color: #fff;
+  background-color: #22222a;
 }
 
 @media screen and (max-width: 960px) {
@@ -43,11 +44,11 @@ p {
 }
 
 a {
-  color: #f27731;
+  color: #c24721;
 }
 
 a:hover {
-  color: #ca510d;
+  color: #812f16;
 }
 
 .sub-title {
@@ -84,11 +85,11 @@ a:hover {
 #header {
   border-radius: 8px;
   border: 1px solid #999;
-  box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
-  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #f27731;
+  box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -moz-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
+  -webkit-box-shadow: 2px 0px 4px #999, 1px 1px 6px #c24721;
   height: 60px;
-  background-color: #170a48;
+  background-color: #42424a;
 }
 
 #header #main-menu li {
@@ -143,6 +144,6 @@ a:hover {
 #main #footer {
   clear: both;
   height: 90px;
-  background-color: #ccf962;
+  background-color: #698932;
 }
 /*# sourceMappingURL=main.css.map */
