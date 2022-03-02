@@ -45,6 +45,15 @@ a {
     color: darken($link-color, 15%);
   }
 }
+%hightlight {
+  font-style: italic;
+}
+.sub-title {
+  @extend %hightlight;
+  @extend .foo !optional;
+  font-size: em(20px);
+}
+
 .warning-button {
   @include warning;
   padding: 8px 12px;
@@ -65,6 +74,7 @@ a {
   @extend .cta-button;
   font-size: em(20px);
 }
+
 #header {
   @include box(8px, 1px solid #999);
   @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secandary-color);
