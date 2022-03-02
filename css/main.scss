@@ -1,3 +1,4 @@
+@import "functions";
 @import "variables";
 @import "mixins";
 
@@ -9,6 +10,7 @@
 body {
   font-family: $text-font;
   color: $text-color;
+  font-size: em(18px);
 
   @include large-screens {
     font-size: 125%;
@@ -30,6 +32,9 @@ p {
 }
 a {
   color: $link-color;
+  &:hover {
+    color: darken($link-color, 15%);
+  }
 }
 .warning-button {
   @include warning;
@@ -54,6 +59,13 @@ a {
     }
     a {
       color: $menuItem-color;
+      padding: 6px 8px;
+      border-bottom: 1px solid transparentize(#fefefe, 1);
+      transition: border-bottom 0.5s;
+      transition-timing-function: ease-in-out;
+    }
+    &:hover {
+      border-bottom: 1 solid opacify(#fefefe, 0.5);
     }
   }
   #logo {
@@ -70,10 +82,23 @@ a {
   margin-right: auto;
 
   #content {
+    float: left;
+    width: 6 * $col;
   }
   #sidebar {
+    float: right;
+    width: 2 * $col;
+    li {
+      list-style-type: none;
+      padding: em(16px) em(20px);
+      border-bottom: 1px dashed #999;
+      &:hover {
+        background-color: #efefef;
+      }
+    }
   }
   #footer {
+    clear: both;
     height: $footer-height;
     background-color: $ternary-color;
   }
